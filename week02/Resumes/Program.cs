@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[] args) //This is an object...no?
     {
         Job job1 = new Job();
         job1._company = "Tecnocom S.A";
