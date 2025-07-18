@@ -1,11 +1,14 @@
 using System;
 using System.Reflection.Emit;
 using Microsoft.VisualBasic;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
+        PromptGenerator randPrompt = new PromptGenerator(); // Create an object to access to GetRandomPrompt
+
         int userChoise = -1;
         while (userChoise != 5)
         {
@@ -24,7 +27,9 @@ class Program
 
             if (userChoise == 1)
             {
-
+                string prompt = randPrompt.GetRandomPrompt();
+                Console.WriteLine(prompt);
+                string response = Console.ReadLine();
             }
 
             if (userChoise == 2)

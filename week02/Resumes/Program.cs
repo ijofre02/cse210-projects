@@ -2,9 +2,9 @@ using System;
 
 class Program
 {
-    static void Main(string[] args) //This is an object...no?
+    static void Main(string[] args) 
     {
-        Job job1 = new Job();
+        Job job1 = new Job(); //create object to use Job
         job1._company = "Tecnocom S.A";
         job1._jobTitle = "Production Administrator";
         job1._startYear = 2020;
@@ -19,7 +19,7 @@ class Program
         //job1.DisplayJobInformation();
         //job2.DisplayJobInformation();
 
-        Resume myResume = new Resume();
+        Resume myResume = new Resume(); //create object to use Resume
         myResume._name = "Ignacio Jofre";
 
         myResume._Jobs.Add(job1);
