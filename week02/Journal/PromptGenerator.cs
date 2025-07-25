@@ -1,7 +1,7 @@
 public class PromptGenerator
 {
     public List<string> _prompts;
-
+    public Random _random; // save only one instance
     public PromptGenerator()
     {
         _prompts = new List<string>()
@@ -12,11 +12,13 @@ public class PromptGenerator
             "What was the strongest emotion I felt today?",
             "If I had one thing I could do over today, what would it be?",
         };
+
+        _random = new Random(); // Is create only once
 }
     public string GetRandomPrompt()
     {
-        Random randomGenerator = new Random(); // randomGenerator is justh a variable name
-        int index = randomGenerator.Next(_prompts.Count); //Count property get the size of the list
+        //Random randomGenerator = new Random(); // randomGenerator is justh a variable name // is not random realy
+        int index = _random.Next(_prompts.Count); //randomGenerator.Next(_prompts.Count); //Count property get the size of the list
         return _prompts[index]; // I don't want return te number index instead I wan retur the string
     }                          //here we have te text _promts in that place [random]
 }
