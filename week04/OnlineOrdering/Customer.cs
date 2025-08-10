@@ -13,7 +13,7 @@ public class Customer
 
     public string GetCostumerInfo()
     {
-        return $"{_customerName}\n{_address.GetAdress()}";
+        return $"{_customerName}\n{_address.GetAddress()}";
     }
 
     //This class need to know if client is in USA or not
@@ -27,7 +27,7 @@ public class Customer
         return _customerName;
     }
 
-    public Address GetAdress()
+    public Address GetAddressObject()
     {
         return _address;
     }

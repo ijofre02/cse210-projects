@@ -35,13 +35,13 @@ class Program
 
         Console.WriteLine("Order 1");
         Console.WriteLine(order1.GetPackingLabel());
-        Console.WriteLine(order1.GetShipingLabel());
+        Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total: ${order1.CalculateTotalCost()}\n");
         Console.WriteLine();
 
         Console.WriteLine("Order 2");
         Console.WriteLine(order2.GetPackingLabel());
-        Console.WriteLine(order2.GetShipingLabel());
+        Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine($"Total: ${order2.CalculateTotalCost()}\n");
         Console.WriteLine();
 

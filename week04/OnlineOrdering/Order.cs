@@ -42,13 +42,13 @@ public class Order
         string label = "packing Label:\n";
         foreach (Product product in _product)
         {
-            label += $"{product.GetProductName()} (ID: {product.GetProductID()}\n)";
+            label += $"{product.GetProductName()} (ID: {product.GetProductID()})\n";
         }
         return label;
     }
 
-    public string GetShipingLabel()
+    public string GetShippingLabel()
     {
-        return "Shiping Label:\n" + _customer.GetName() + "\n" + _customer.GetAdress();
+        return $"Shipping Label:\n{_customer.GetName()}\n{_customer.GetAddressObject().GetAddress()}";
     }
 }

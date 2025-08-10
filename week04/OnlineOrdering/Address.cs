@@ -19,7 +19,7 @@ public class Address
     {
         return _country.ToLower() == "usa";
     }
-    public string GetAdress()
+    public string GetAddress()
     {
         return $"{_street}\n{_city}\n{_stateOrProvince}\n{_country} ";
     }
